@@ -42,22 +42,25 @@ tags:
 
 ##7.链接
 > Markdown中有两种方式实现链接：内联方式和引用方式
+
 1.内联方式: [华为](http://www.huawei.com/cn/)不仅仅是世界500强
 2.引用方式: I come from [huawei][1] Technologies Company
 [1]:http://www.huawei.com/cn/
 
 ##8. 图片
 > 图片的处理跟链接类似也有内联和引用方式
+
 1.内联方式:   
 ![钟楼](/media/pic/bell_tower.jpg '钟楼')
+
 2.引用方式:   
 ![西电][2]
 [2]: /media/pic/xidian.jpg
 
 ##9. 代码
-实现方式有两种：
+实现方式有两种：  
 1.简单文字需要代码框时，使用\`来实现;  
-`print “test”`
+`print “test”`  
 2. 大片文字需要代码框时，使用"\<pre\>\<code\>和\</code\>\</pre\>"实现  
 <pre>
 <code>
