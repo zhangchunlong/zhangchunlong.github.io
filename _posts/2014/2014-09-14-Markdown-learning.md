@@ -6,6 +6,7 @@ categories:
 tags:
 - markdown
 
+---
 #Markdown入门学习  
 
 ##1.标题
