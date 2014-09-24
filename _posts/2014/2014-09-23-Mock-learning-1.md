@@ -1,8 +1,10 @@
 ---
-layout: default  
-title: Mock Learning(1)  
-category: tool  
-comments: true  
+layout: post
+title: Mock Learning(1)
+categories:
+- tool
+tags:
+- Mock
 ---
 #Mock类
 
