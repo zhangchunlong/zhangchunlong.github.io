@@ -179,7 +179,7 @@ True
 </code></pre>
 
 ##8.其他方法
-Mock类还有很多其他的方法，如assert_has_calls,mock_add_spec,attach_mock等方法，感兴趣的可以去[这里]（www.voidspace.org.uk/python/mock/）.
+Mock类还有很多其他的方法，如assert_has_calls,mock_add_spec,attach_mock等方法，感兴趣的可以去[这里](http://www.voidspace.org.uk/python/mock/).
 
 
 
