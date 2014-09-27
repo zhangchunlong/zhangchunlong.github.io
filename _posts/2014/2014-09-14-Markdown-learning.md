@@ -58,10 +58,9 @@ tags:
 实现方式有两种：  
 1.简单文字需要代码框时，使用\`来实现;  
 `print “test”`  
-2. 大片文字需要代码框时，使用"\<pre\>\<code\>和\</code\>\</pre\>"实现  
+2. 大片文字需要代码框时，使用""实现  
 <pre>
-<code>
- #include "stdio.h"
+<code>#include "stdio.h"
  int main()  
  {  
          printf("hello world!\n");  
