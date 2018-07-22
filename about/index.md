@@ -11,3 +11,6 @@ comments: yes
 - Email: <ztralon@hotmail.com>      
 - Weibo: [tralon](http://weibo.com/u/1718500982)      
 - Github : [https://github.com/zhangchunlong](https://github.com/zhangchunlong) 
+- 微信公众号:  
+  ![微信公众号](/media/pic/me/my_webchat.jpg)
+
