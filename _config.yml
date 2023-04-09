@@ -1,6 +1,6 @@
 markdown: rdiscount
 permalink: /:year/:month/:title/
-url: http://www.tralon.com
+url: http://zhangchunlong.github.io
 author: tralon
 pygments: true
 paginate: 24
