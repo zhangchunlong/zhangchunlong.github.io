@@ -1,13 +1,14 @@
 ---  
 layout: post  
-title: 单例模式  
+title: 工厂模式  
 categories:  
 - 技术  
 tags:  
 - Software Engineering
 ---
 
-单例模式：确保一个类只有一个实例，并提供一个全局访问点。
+最近中秋节马上到了，这里以月饼为例进行说明简单工厂、工厂方法、抽象工厂模式。  
+简单工厂模式：封装创建对象的逻辑，将创建逻辑放到独立的对象中 
 
 ![singleton](/media/pic/singleton.png 'singleton')  
 常见实现方式：  
