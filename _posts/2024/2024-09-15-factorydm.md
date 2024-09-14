@@ -7,10 +7,10 @@ tags:
 - Software Engineering
 ---
 
-最近中秋节马上到了，这里以月饼为了进行说明简单工厂、工厂方法、抽象工厂模式
+最近中秋节马上到了，这里以月饼为例进行说明简单工厂、工厂方法、抽象工厂模式
 
-简单工厂模式：封装创建对象的逻辑，将创建逻辑放到独立的对象中
-	
+简单工厂模式：封装创建对象的逻辑，将创建逻辑放到独立的对象中  
+
 	public class MooncakeStore {
     	Mooncake orderMooncake(String type) {
         	Mooncake mooncake = null;
@@ -29,7 +29,7 @@ tags:
     	}
 	}
 
-我们可以通过抽取创建月饼的方法，变成如下方式，将创建月饼放到SimpleMooncakeFactory
+我们可以通过抽取创建月饼的方法，变成如下方式，将创建月饼放到SimpleMooncakeFactory  
 
 	public class MooncakeStore {
     	private SimpleMooncakeFactory factory;
@@ -61,7 +61,7 @@ tags:
     	}
 	}
 
-工厂方法模式：定义一个创建对象的接口，但由于子类决定要实例化的类是哪一个。工厂方法让类把实例化推迟到子类。通过让子类决定该创建的对象是什么，来达到将对象创建的过程封装的目的。
+工厂方法模式：定义一个创建对象的接口，但由于子类决定要实例化的类是哪一个。工厂方法让类把实例化推迟到子类。通过让子类决定该创建的对象是什么，来达到将对象创建的过程封装的目的。  
 
 ![factoryMethod](/media/pic/factoryMethod.PNG 'factoryMethod')  
 
@@ -108,15 +108,15 @@ Creator是一个抽象类，它实现所有操作产品的方法，但是不实�
         	}
         	return mooncake;
     	}
-	}
+	}  
 
-抽象工厂模式：提供一个接口用于创建相关或依赖对象的家族，而不需要明确指定具体类。
+抽象工厂模式：提供一个接口用于创建相关或依赖对象的家族，而不需要明确指定具体类。  
 
 ![abstractFactory](/media/pic/abstractFactory.PNG 'abstractFactory')  
 
-抽象工厂定义一个接口，所有具体工厂都必须实现此接口，这个接口包含一组方法用来生产产品；具体工厂实现不同的产品家族，客户只需要使用其中一个工厂而不需要实例化具体的产品对象。
+抽象工厂定义一个接口，所有具体工厂都必须实现此接口，这个接口包含一组方法用来生产产品；具体工厂实现不同的产品家族，客户只需要使用其中一个工厂而不需要实例化具体的产品对象。  
 
-还以月饼为例，做月饼需要原料，比如需要面粉，食用油等，南方和北方使用原料不一样，比如南方喜欢使用米粉，花仔油而北方喜欢使用面粉，花生油。
+还以月饼为例，做月饼需要原料，比如需要面粉，食用油等，南方和北方使用原料不一样，比如南方喜欢使用米粉，花仔油而北方喜欢使用面粉，花生油。  
 
 	public interface MoonIngredientFactory {
     	public Flour createFlour();
