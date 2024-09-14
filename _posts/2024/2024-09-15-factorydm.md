@@ -27,7 +27,7 @@ tags:
         	mooncake.box();
         	return mooncake;
     	}
-	}
+	}  
 
 我们可以通过抽取创建月饼的方法，变成如下方式，将创建月饼放到SimpleMooncakeFactory  
 
@@ -166,7 +166,6 @@ Creator是一个抽象类，它实现所有操作产品的方法，但是不实�
 	public class WheatFlour implements Flour {
 	}
 
-	//抽象工厂的客户
 	public class GuangshiMooncakeStore extends MooncakeStore {
     	@Override
     	public Mooncake createMooncake(String type) {
