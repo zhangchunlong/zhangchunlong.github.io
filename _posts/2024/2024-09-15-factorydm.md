@@ -1,6 +1,6 @@
 ---  
 layout: post  
-title: 工厂模式  
+title: 模式  
 categories:  
 - 技术  
 tags:  
