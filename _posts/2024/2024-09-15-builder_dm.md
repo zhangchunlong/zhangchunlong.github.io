@@ -12,7 +12,7 @@ tags:
 ![builder](/media/pic/builder.PNG 'builder')  
  
 Builder为创建一个Product对象的各个部件指定抽象接口；  
-ConcreteBuilder实现Builder接口以构造和装配该产品的各个部件；
+ConcreteBuilder实现Builder接口以构造和装配该产品的各个部件；  
 Director构造一个使用Builder接口的对象；  
 Product表示被构造的复杂对象，ConcreteBuilder创建该产品的内部表示并定义它的装配过程。  
 
