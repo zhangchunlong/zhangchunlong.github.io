@@ -67,6 +67,11 @@ tags:
 
 ![factoryMethod](/media/pic/factoryMethod.PNG 'factoryMethod')  
 
+Product定义工厂方法所创建的对象的接口；  
+ConcreteProduct实现Product接口；  
+Creator声明工厂方法，该方法返回一个Product类型的对象。  
+ConcreteCreator重新定义工厂方法返回一个ConcreteProduct实例
+
 Creator是一个抽象类，它实现所有操作产品的方法，但是不实现工厂方法；Creator所有子类都必须实现这个抽象的factoryMethod方法，ConcreteCrator实现factoryMethod方法制造产品；所有的产品实现Product的接口。 下面继续以月饼为例，比如有广式风格月饼，京式风格月饼。  
 
 	public abstract class MooncakeStore {
@@ -120,6 +125,11 @@ Creator是一个抽象类，它实现所有操作产品的方法，但是不实�
 ![abstractFactory](/media/pic/abstractFactory.PNG 'abstractFactory')  
 
 抽象工厂定义一个接口，所有具体工厂都必须实现此接口，这个接口包含一组方法用来生产产品；具体工厂实现不同的产品家族，客户只需要使用其中一个工厂而不需要实例化具体的产品对象。  
+AbstractFactory声明一个创建抽象产品对象的接口；  
+ConcreteFactory实现创建具体产品对象的操作；  
+AbstractProduct为一类产品对象声明一个接口；  
+ConcreteProduct定义一个将被具体工厂创建的产品对象；  
+Client 仅使用AbstractFactory和AbstractProduct类声明的接口  
 
 还以月饼为例，做月饼需要原料，比如需要面粉，食用油等，南方和北方使用原料不一样，比如南方喜欢使用米粉，花仔油而北方喜欢使用面粉，花生油。  
 
