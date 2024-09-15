@@ -16,6 +16,10 @@ ConcreteBuilder实现Builder接口以构造和装配该产品的各个部件；
 Director构造一个使用Builder接口的对象；  
 Product表示被构造的复杂对象，ConcreteBuilder创建该产品的内部表示并定义它的装配过程。  
 
+各个对象协作如下：  
+
+![builder_interaction](/media/pic/builder_interaction.PNG 'builder_interaction')  
+
 这里以虚拟机为例说明建造者模式，虚拟机在公有云中一般称为实例。   
 
 	public class Flavor {
