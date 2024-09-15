@@ -117,11 +117,11 @@ Product表示被构造的复杂对象，ConcreteBuilder创建该产品的内部�
     	    this.builder = builder;
     	}
 
-    	public Instance construct(Flavor flavor, String imageId, String volume, String network) {
-        	builder.withFlavor(flavor)
-					.withImageId(imageId)
-                	.withNetworks(network)
-                	.withVolumes(volume);
-        	return builder.build();
+    	public Instance construct() {
+    	    builder.withFlavor(new Flavor(2, 4, "x86"))
+    	            .withImageId("image-11-22-33-44")
+    	            .withNetworks("network-11-22-33-44")
+    	            .withVolumes("volume-11-22-33-44");
+    	    return  builder.build();
     	}
 	}
