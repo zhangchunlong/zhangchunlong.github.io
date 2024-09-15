@@ -130,6 +130,13 @@ Product表示被构造的复杂对象，ConcreteBuilder创建该产品的内部�
     	}
 	}
 
+还有一些简化的实现方式，例如StringBuilder：  
+
+	StringBuilder builder = new StringBuilder();
+	builder.append("name=tralon")
+       	.append("age=20");
+	String url = builder.toString(); 
+
 建造者模式适用场景：  
 用来创建一种类型的复杂对象，通过设置不同的可选参数，定制化地创建不同的对象。
 
