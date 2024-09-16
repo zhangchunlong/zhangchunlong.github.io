@@ -15,7 +15,7 @@ Prototype 表示声明一个clone自身的接口
 ConcretePrototype 实现一个克隆自身的操作  
 Client通过从一个原型实例克隆自身创建一个新的对象
 
-场景实现：  
+常见的浅拷贝实现：  
 
 	public class LineStyle {
     	private String type;
